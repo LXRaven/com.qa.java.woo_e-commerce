@@ -1,9 +1,15 @@
 package com.qa.java.woo.ecommerce.model;
 
-public class Product {
+import lombok.*;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public  class Product {
 	int id;
 	String name;
-	float price;
+	double price;
 	String category;
 	boolean inStock;
 	float discountPercentage;
